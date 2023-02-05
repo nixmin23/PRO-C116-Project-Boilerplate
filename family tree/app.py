@@ -9,19 +9,19 @@ app = Flask(__name__)
 @app.route("/")
 def home():
 
-    name = "" # write your name
-    age = "" # write your age
+    name = "Alex" # write your name
+    age = "15" # write your age
 
     return render_template('index.html' , name = name , age = age)
 
 # define the route to father webpage
-
+@app.route("/father")
 
 # define the route to mother webpage
-
+@app.route("/mother")
 
 # define the route to friends webpage
-
+@app.route("/friends")
 
 # add other routes, if you want
 
